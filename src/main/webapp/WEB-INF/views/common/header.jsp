@@ -1,40 +1,55 @@
 <%@ page contentType ="text/html; charset=UTF-8"%>
 
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="/webapp/resources/css/app.css" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Osstem Interior Admin</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet">
+
 </head>
 <body>
-	<div class="d-flex flex-column vh-100">
-		<nav class="navbar navbar-dark bg-dark font-weight-bold">
-			<a class="navbar-brand" href="#">
-			<img src="${pageContext.request.contextPath}/resources/images/logo-spring.png" width="30" height="30" class="d-inline-block align-top"> Spring
-			 <%-- <img src="<%=request.getContextPath() %>/resources/images/logo-spring.png" width="30" height="30" class="d-inline-block align-top"> Spring --%>
-			</a>
-			<div>
-				<a href="#" class="btn btn-success btn-sm">로그인</a>
-			</div>
-		</nav>
-		<div class="container-fluid flex-grow-1">
-			<div class="row h-100">
-				<div class="col-md-4 bg-dark p-3">
-					<div class="h-100 d-flex flex-column">
-						<div class="flex-grow-1" style="height: 0px; overflow-y: auto; overflow-x: hidden;">
-							<%@ include file="/WEB-INF/views/common/menu.jsp"%>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-md-8 p-3">
-					<div class="h-100 d-flex flex-column">
-						<div class="flex-grow-1 pr-3" style="height: 0px; overflow-y: auto; overflow-x: hidden;">
-							
+	<!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top d-flex align-items-center">
+	
+		<div class="d-flex align-items-center justify-content-between">
+	      <i class="bi bi-list toggle-sidebar-btn"></i>
+	      <a href="index.html" class="logo d-flex align-items-center p-2">
+	        <img src="${pageContext.request.contextPath}/resources/images/osstem_ci.png">
+	      </a>
+	    </div><!-- End Logo -->
+	
+	    <nav class="header-nav ms-auto">
+	      <ul class="d-flex align-items-center">
+	        <li class="nav-item dropdown pe-3">
+	          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+	            <span class="">전병천</span>
+	            <i class="bi-person-circle p-3"></i>
+	          </a><!-- End Profile Iamge Icon -->
+	        </li><!-- End Profile Nav -->
+	      </ul>
+	    </nav><!-- End Icons Navigation -->
+	  </header><!-- End Header -->
