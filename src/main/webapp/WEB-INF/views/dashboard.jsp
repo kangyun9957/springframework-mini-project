@@ -1,4 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
+<%@ include file="/WEB-INF/views/common/header.jsp"%>
+<%@ include file="/WEB-INF/views/common/sidebar.jsp"%>
 
   <main id="main" class="main">
 
@@ -404,3 +406,5 @@
     </section>
 
   </main><!-- End #main -->
+
+ <%@ include file="/WEB-INF/views/common/footer.jsp"%>

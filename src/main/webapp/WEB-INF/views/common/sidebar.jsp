@@ -16,7 +16,7 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="../Admin/analysis_sales.html">
+            <a href="${pageContext.request.contextPath}/analysis">
               <i class="bi bi bi-cash-coin"></i><span>Sales</span>
             </a>
           </li>
@@ -48,7 +48,7 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-hospital-fill"></i><span>Dentist</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-hospital-fill"></i><span>Hospital</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
